@@ -23,15 +23,9 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: Text(
-          'Body Text',
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2,
-            color: Colors.grey[600],
-            fontFamily: 'IndieFlower',
-          ),
+        child: IconButton(
+          onPressed: () {},
+          icon: Icon(Icons.mail, color: Colors.redAccent, size: 40),
         ),
       ),
       bottomNavigationBar: BottomAppBar(
