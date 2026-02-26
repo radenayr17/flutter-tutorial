@@ -22,25 +22,32 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.redAccent,
         centerTitle: true,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.end,
+      body: Row(
         children: [
-          Row(children: [Text('Hello'), Text('Flutter')]),
-          Container(
-            padding: EdgeInsets.all(20),
-            color: Colors.blueAccent,
-            child: Text('One'),
+          Expanded(flex: 3,child: Image.asset('assets/space.jpg')),
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.all(20),
+              color: Colors.cyanAccent,
+              child: Text('1'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(30),
-            color: Colors.redAccent,
-            child: Text('Two'),
+          Expanded(
+            flex: 3,
+            child: Container(
+              padding: EdgeInsets.all(20),
+              color: Colors.pinkAccent,
+              child: Text('2'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(40),
-            color: Colors.purpleAccent,
-            child: Text('Three'),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(20),
+              color: Colors.amberAccent,
+              child: Text('3'),
+            ),
           ),
         ],
       ),
