@@ -22,10 +22,12 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.redAccent,
         centerTitle: true,
       ),
-      body: Center(
-        child: IconButton(
-          onPressed: () {},
-          icon: Icon(Icons.mail, color: Colors.redAccent, size: 40),
+      body: Padding(
+        padding: EdgeInsets.all(20),
+        child: Text(
+          'Flutter is an open-source UI software development toolkit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, Mac, Windows, Google Fuchsia, and the web from a single codebase.',
+          style: TextStyle(fontSize: 18),
+          textAlign: TextAlign.justify,
         ),
       ),
       bottomNavigationBar: BottomAppBar(
