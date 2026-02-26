@@ -22,13 +22,29 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.redAccent,
         centerTitle: true,
       ),
-      body: Padding(
-        padding: EdgeInsets.all(20),
-        child: Text(
-          'Flutter is an open-source UI software development toolkit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, Mac, Windows, Google Fuchsia, and the web from a single codebase.',
-          style: TextStyle(fontSize: 18),
-          textAlign: TextAlign.justify,
-        ),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text('Hello World'),
+          TextButton(
+            onPressed: () {},
+            style: TextButton.styleFrom(backgroundColor: Colors.redAccent),
+            child: Text(
+              'Button here',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          Container(
+            color: Colors.amberAccent,
+            padding: EdgeInsets.all(16),
+            child: Text('Container here'),
+          ),
+        ],
       ),
       bottomNavigationBar: BottomAppBar(
         color: Colors.redAccent,
